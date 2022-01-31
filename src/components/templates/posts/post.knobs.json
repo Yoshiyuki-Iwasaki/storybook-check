@@ -1,0 +1,11 @@
+{
+    "direction":{
+        "label": "Direction",
+        "options":{
+            "horizontal": "horizontal",
+            "vertical" : "vertical"
+        },
+        "default": "horizontal",
+        "groupe": "variation"
+    }
+}

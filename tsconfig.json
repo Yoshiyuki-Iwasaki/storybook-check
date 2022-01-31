@@ -5,6 +5,7 @@
     },
     "compilerOptions": {
         "jsx": "react-jsx",
+        "resolveJsonModule": true,
         "allowSyntheticDefaultImports": true,
     }
 }
