@@ -51,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 	body {
 		overflow-y: scroll;
-		background-color: ${props => props.theme.primary};
+		background-color: ${props => props.theme.white};
 		font-size: 1.6rem;
 		line-height: 1.5;
 		scroll-behavior: smooth;

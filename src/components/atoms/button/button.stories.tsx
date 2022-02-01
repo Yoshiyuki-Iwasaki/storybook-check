@@ -8,7 +8,9 @@ const buttonClicked = e => {
   alert("Hello");
 };
 
-export const basicButton = () => <Button>Basic button</Button>;
+export const basicButton = () => (
+  <Button variant="secondary">Basic button</Button>
+);
 export const functionButton = () => (
   <Button onClick={buttonClicked}>Function button</Button>
 );
