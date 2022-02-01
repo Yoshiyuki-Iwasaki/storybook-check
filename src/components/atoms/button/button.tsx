@@ -1,4 +1,6 @@
-import React, { ReactChild } from "react";
+import React from "react";
+
+import { StyledButton, StyledLinkedButton } from "./button.styles";
 
 type ButtonType = {
   children: React.ReactNode;
@@ -7,8 +9,8 @@ type ButtonType = {
 };
 
 const Button: React.FC<ButtonType> = ({ children, href, onClick }) => {
-  if (!href) return <button onClick={onClick}>{children}</button>;
-  return <a href={href}>{children}</a>;
+  if (!href) return <StyledButton onClick={onClick}>{children}</StyledButton>;
+  return <StyledLinkedButton href={href}>{children}</StyledLinkedButton>;
 };
 
 export default Button;
