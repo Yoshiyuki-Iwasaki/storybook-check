@@ -2,6 +2,14 @@ import React from "react";
 
 import { StyledButton, StyledLinkedButton } from "./button.styles";
 
+import IconPlus from "../../../assets/images/icons/plus.svg";
+
+// const IconPlus = require("../../../assets/images/icons/plus.svg");
+// const IconBag = require("../../../assets/images/icons/shopping-bag.svg");
+// const IconCart = require("../../../assets/images/icons/shopping-cart.svg");
+// const IconUser = require("../../../assets/images/icons/user.svg");
+// const IconX = require("../../../assets/images/icons/x.svg");
+
 type ButtonType = {
   children: React.ReactNode;
   href?: string;
@@ -23,6 +31,8 @@ const Button: React.FC<ButtonType> = ({
     );
   return (
     <StyledLinkedButton href={href} variant={variant}>
+      {/* <img src={IconPlus} /> */}
+      <IconPlus />
       {children}
     </StyledLinkedButton>
   );
