@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import "normalize.css/normalize.css";
+import { createGlobalStyle } from 'styled-components';
+import 'normalize.css/normalize.css';
 
 const GlobalStyle = createGlobalStyle`
 		/* Accessibly remove animations: https://gist.githubusercontent.com/bellangerq/6cdfe6e3701b4048c72546960c7c9f66/raw/dc5036697d0da57eff8e0f659106b319102e72a0/a11y-disable-animations.css */
@@ -41,7 +41,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 	p {
 		a {
-			color: ${props => props.theme.primary};
+			color: ${(props) => props.theme.primary};
 			&:active,
 			&:focus,
 			&:hover {
@@ -51,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 	body {
 		overflow-y: scroll;
-		background-color: ${props => props.theme.white};
+		background-color: ${(props) => props.theme.white};
 		font-size: 1.6rem;
 		line-height: 1.5;
 		scroll-behavior: smooth;
@@ -85,7 +85,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 	.grid {
 		margin: 0 auto;
-		max-width: ${props => props.theme.gridMax};
+		max-width: ${(props) => props.theme.gridMax};
 		padding: 0 30px;
 	}
 	/* Common base styles for the site */
@@ -172,7 +172,7 @@ const GlobalStyle = createGlobalStyle`
 				position: absolute;
 				top: 0;
 				left: 0;
-				color: ${props => props.theme.primary};
+				color: ${(props) => props.theme.primary};
 				content: counter(list-counter) ". ";
 				font-style: normal;
 				font-weight: bold;
@@ -197,7 +197,7 @@ const GlobalStyle = createGlobalStyle`
   input,
   textarea {
     padding: 16px;
-		background-color: ${props => props.theme.white};
+		background-color: ${(props) => props.theme.white};
 		border: 1px solid rgba(0, 0, 0, 0.12);
     & + & {
       margin-top: 24px;
@@ -205,7 +205,7 @@ const GlobalStyle = createGlobalStyle`
   }
   label {
     margin: 16px 0 8px;
-		color: ${props => props.theme.black};
+		color: ${(props) => props.theme.black};
 		font-size: 16px;
 		font-weight: bold;
 		line-height: 32px;
@@ -221,7 +221,7 @@ const GlobalStyle = createGlobalStyle`
 		font-weight:normal;
 	}
 	::placeholder {
-		color: ${props => props.theme.grey500};
+		color: ${(props) => props.theme.grey500};
 		font-size: 14px;
 		font-weight: 300;
 		line-height: 20px;

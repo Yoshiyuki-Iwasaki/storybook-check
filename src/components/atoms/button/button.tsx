@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 import {
   StyledButton,
@@ -6,9 +6,9 @@ import {
   Icon,
   Inner,
   Text,
-} from "./button.styles";
+} from './button.styles';
 
-import IconPlus from "../../../assets/images/icons/plus.svg";
+import IconPlus from '../../../assets/images/icons/plus.svg';
 // const IconBag = require("../../../assets/images/icons/shopping-bag.svg");
 // const IconCart = require("../../../assets/images/icons/shopping-cart.svg");
 // const IconUser = require("../../../assets/images/icons/user.svg");
@@ -25,7 +25,7 @@ const Button: React.FC<ButtonType> = ({
   children,
   href,
   onClick,
-  variant = "primary",
+  variant = 'primary',
 }) => {
   if (!href)
     return (

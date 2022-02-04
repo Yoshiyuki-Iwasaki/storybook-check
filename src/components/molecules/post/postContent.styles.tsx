@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const StylesPostContent = styled.article`
   padding: 64px 0;

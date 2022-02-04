@@ -1,16 +1,16 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-const buttonBackground = props => {
+const buttonBackground = (props) => {
   if (!props.variant) return props.theme.primary;
   let color = props.theme.primary;
   switch (props.variant) {
-    case "primary":
+    case 'primary':
       color = props.theme.primary;
       break;
-    case "secondary":
+    case 'secondary':
       color = props.theme.secondary;
       break;
-    case "tertiary":
+    case 'tertiary':
       color = props.theme.tertiary;
       break;
     default:
@@ -23,7 +23,7 @@ const buttonBackground = props => {
 export const StyledButton = styled.button`
   padding: 16px;
   display: inline-block;
-  background: ${props => buttonBackground(props)};
+  background: ${(props) => buttonBackground(props)};
   border: none;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0);
   cursor: pointer;
@@ -33,8 +33,8 @@ export const StyledButton = styled.button`
   transition: all 0.15s ease;
 `;
 
-export const StyledLinkedButton = styled(StyledButton).attrs({ as: "a" })`
-  background: ${props => props.theme.secondary};
+export const StyledLinkedButton = styled(StyledButton).attrs({ as: 'a' })`
+  background: ${(props) => props.theme.secondary};
 `;
 
 export const Inner = styled.div`
@@ -48,7 +48,7 @@ export const Icon = styled.p`
 `;
 export const Text = styled.p`
   font-size: 15px;
-  color: ${props => props.theme.white};
+  color: ${(props) => props.theme.white};
   font-weight: 700;
   line-height: 1;
 `;

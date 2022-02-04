@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import StyledPost from "./post.styles";
+import StyledPost from './post.styles';
 
-import PostContent from "../../molecules/post/postContent";
+import PostContent from '../../molecules/post/postContent';
 
 const PostTemplate = ({ content }: any) => {
   return (
