@@ -1,6 +1,7 @@
 import GlobalStyle from "../src/components/particles/globalStyles";
 import { ThemeProvider } from "styled-components";
 import themeDefault from "../src/components/particles/themeDefault";
+import "../src/index.css";
 /*
  * Global decorator to apply the styles to all stories
  * Read more about them at:
