@@ -1,0 +1,7 @@
+{
+    "innerText":{
+        "label": "Link Text",
+        "default": "Link Text",
+        "group": "text"
+    }
+}
