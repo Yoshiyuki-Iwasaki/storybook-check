@@ -14,7 +14,7 @@ export const horizontalNavigation = () => (
       direction.default,
       direction.group
     )}
-    items={array(items.label, items.default, items.group)}
+    items={items.default}
   />
 );
 
@@ -26,7 +26,7 @@ export const verticalNavigation = () => (
       'vertical',
       direction.group
     )}
-    items={array(items.label, items.default, items.group)}
+    items={items.default}
   />
 );
 

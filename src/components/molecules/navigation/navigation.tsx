@@ -1,6 +1,11 @@
 import React from 'react';
-
 import { StyledNavigation } from './navigation.styles';
+
+type ItemType = {
+  url: any;
+  default: any;
+  title: any;
+};
 
 type NavigationType = {
   direction: any;
@@ -13,8 +18,10 @@ const Navigation: React.FC<NavigationType> = ({
 }) => {
   return (
     <StyledNavigation direction={direction}>
-      {items.map((item: any) => (
-        <a href={item.url}>{item.title}</a>
+      {items.map((item) => (
+        <a key={item.title} href={item.url}>
+          {item.title}
+        </a>
       ))}
     </StyledNavigation>
   );
