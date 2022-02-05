@@ -43,7 +43,7 @@ export const Inner = styled.div`
   align-items: center;
 `;
 
-export const Icon = styled.p`
+export const IconWrap = styled.p`
   padding: 0 3px;
 `;
 export const Text = styled.p`

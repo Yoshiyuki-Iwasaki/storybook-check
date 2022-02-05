@@ -3,20 +3,36 @@ import React from 'react';
 import {
   StyledButton,
   StyledLinkedButton,
-  Icon,
+  IconWrap,
   Inner,
   Text,
 } from './button.styles';
 
 import IconPlus from '../../../assets/images/icons/plus.svg';
-// const IconBag = require("../../../assets/images/icons/shopping-bag.svg");
-// const IconCart = require("../../../assets/images/icons/shopping-cart.svg");
-// const IconUser = require("../../../assets/images/icons/user.svg");
-// const IconX = require("../../../assets/images/icons/x.svg");
+import IconBag from '../../../assets/images/icons/shopping-bag.svg';
+import IconCart from '../../../assets/images/icons/shopping-cart.svg';
+import IconUser from '../../../assets/images/icons/user.svg';
+import IconX from '../../../assets/images/icons/x.svg';
+
+const Icons = {
+  bag: IconBag,
+  cart: IconCart,
+  plus: IconPlus,
+  user: IconUser,
+  x: IconX,
+};
+
+const ButtonIcon = ({ name }) => {
+  if (Icons[name] === undefined) return null;
+
+  const Icon = Icons[name];
+  return <img src={Icon} />;
+};
 
 type ButtonType = {
   children: React.ReactNode;
   href?: string;
+  icon?: string;
   onClick?: (e: React.MouseEvent<HTMLInputElement>) => void;
   variant?: string;
 };
@@ -24,6 +40,7 @@ type ButtonType = {
 const Button: React.FC<ButtonType> = ({
   children,
   href,
+  icon,
   onClick,
   variant = 'primary',
 }) => {
@@ -31,9 +48,7 @@ const Button: React.FC<ButtonType> = ({
     return (
       <StyledButton onClick={onClick} variant={variant}>
         <Inner>
-          <Icon>
-            <img src={IconPlus} />
-          </Icon>
+          <IconWrap>{icon && <ButtonIcon name={icon} />}</IconWrap>
           <Text>{children}</Text>
         </Inner>
       </StyledButton>
@@ -41,9 +56,7 @@ const Button: React.FC<ButtonType> = ({
   return (
     <StyledLinkedButton href={href} variant={variant}>
       <Inner>
-        <Icon>
-          <img src={IconPlus} />
-        </Icon>
+        <IconWrap>{icon && <ButtonIcon name={icon} />}</IconWrap>
         <Text>{children}</Text>
       </Inner>
     </StyledLinkedButton>
