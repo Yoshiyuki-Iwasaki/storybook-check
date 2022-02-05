@@ -12,7 +12,6 @@ const blogContent =
 export const examplePost = () => <PostTemplate content={blogContent} />;
 
 export default {
-  component: PostTemplate,
   decorators: [withKnobs],
-  title: 'Templete|Blog Post',
+  title: 'templates/PostTemplate',
 };

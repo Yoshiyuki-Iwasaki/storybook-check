@@ -9,5 +9,5 @@ export const basicLink = () => (
 
 export default {
   decorators: [withKnobs],
-  title: 'Link',
+  title: 'atoms/Link',
 };
