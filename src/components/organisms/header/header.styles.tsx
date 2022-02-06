@@ -111,7 +111,7 @@ export const StyledHeader = styled.header`
       top: 0;
 
       button {
-        display: block;
+        display: flex;
       }
     }
   }
