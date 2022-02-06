@@ -59,6 +59,7 @@ export const StyledHeader = styled.header`
   button {
     margin: 0;
     display: inline-flex;
+    align-items: center;
   }
   img {
     width: auto;

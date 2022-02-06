@@ -92,9 +92,6 @@ const GlobalStyle = createGlobalStyle`
 	figure, img, svg, video {
 		max-width: 100%;
 	}
-	figure {
-		width: auto !important;
-	}
 	video {
 		display: block;
 		width: 100%;
