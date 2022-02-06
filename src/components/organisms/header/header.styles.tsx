@@ -47,36 +47,22 @@ const headerPosition = (props) => {
 };
 
 export const StyledHeader = styled.header`
-  align-items: center;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   left: ${(props) => (props.variant ? `0` : undefined)};
-  padding: 30px;
   position: relative;
   top: ${(props) => (props.variant ? `0` : undefined)};
-  width: 100%;
+  max-width: 1000px;
   z-index: 9;
   color: ${(props) => headerColour(props)};
-  @media ${device.md} {
-    display: block;
-    padding: 0;
-    position: ${(props) => headerPosition(props)};
-  }
   button {
+    margin: 0;
     display: inline-flex;
-    margin-left: auto;
-    @media ${device.md} {
-      display: none;
-    }
   }
   img {
-    height: 40px;
-    @media ${device.md} {
-      height: 64px;
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
+    width: auto;
+    height: 50px;
   }
   nav {
     padding: 0;
@@ -91,58 +77,49 @@ export const StyledHeader = styled.header`
   .header__navigation {
     align-items: center;
     display: block;
-    height: 100%;
-    padding: 124px 30px 30px;
-    position: fixed;
-    left: 0;
-    top: -100%;
-    width: 100%;
+    padding: 0;
     z-index: -1;
-    background-color: ${(props) => props.theme.offWhite};
     color: ${(props) => props.theme.black};
     transition: 0.4s top ease;
+
+    @media (max-width: 768px) {
+      padding: 124px 30px 30px;
+      position: fixed;
+      top: -100%;
+      background-color: ${(props) => props.theme.offWhite};
+      width: 100%;
+      height: 100%;
+    }
+
     a + a {
-      margin-left: 0;
-      margin-top: 16px;
-      @media ${device.md} {
-        margin-left: 32px;
-        margin-top: 0;
-      }
+      margin-left: 16px;
+      margin-top: 0;
     }
     nav {
       padding-top: 24px;
       flex-direction: column;
       border-top: 1px solid ${(props) => props.theme.grey600};
-      @media ${device.md} {
-        flex-direction: unset;
-        padding-top: 0;
-        border-top: none;
-      }
     }
     nav + nav {
       margin-top: 24px;
-      @media ${device.md} {
-        margin-top: 0;
-      }
-    }
-    @media ${device.md} {
-      display: flex;
-      left: unset;
-      margin: 0 auto;
-      max-width: 1920px;
-      min-height: 124px;
-      padding: 30px;
-      position: relative;
-      background-color: transparent;
-      color: inherit;
     }
   }
+
   &.header--open {
     .header__navigation {
-      top: 0%;
-      @media ${device.md} {
-        left: unset;
+      top: 0;
+
+      button {
+        display: block;
       }
+    }
+  }
+
+  .header__buttonWrap {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: inline-flex;
     }
   }
 `;

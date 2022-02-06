@@ -8,7 +8,7 @@ type ItemType = {
 };
 
 type NavigationType = {
-  direction: any;
+  direction?: any;
   items?: any;
 };
 
