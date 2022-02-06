@@ -8,11 +8,11 @@ import {
   Text,
 } from './button.styles';
 
-import IconPlus from '../../../assets/images/icons/plus.svg';
-import IconBag from '../../../assets/images/icons/shopping-bag.svg';
-import IconCart from '../../../assets/images/icons/shopping-cart.svg';
-import IconUser from '../../../assets/images/icons/user.svg';
-import IconX from '../../../assets/images/icons/x.svg';
+import IconPlus from '../../../assets/images/icons/plus_white.svg';
+import IconBag from '../../../assets/images/icons/shopping-bag_white.svg';
+import IconCart from '../../../assets/images/icons/shopping-cart_white.svg';
+import IconUser from '../../../assets/images/icons/user_white.svg';
+import IconX from '../../../assets/images/icons/x_white.svg';
 
 const Icons = {
   bag: IconBag,

@@ -5,22 +5,22 @@
 				"title": "general",
 				"items": [
 					{
-						"icon": null,
+						"icon": "",
 						"title": "Shop",
 						"url": "#"
 					},
 					{
-						"icon": null,
+						"icon": "",
 						"title": "About Celtic Elements",
 						"url": "#"
 					},
 					{
-						"icon": null,
+						"icon": "",
 						"title": "FAQ",
 						"url": "#"
 					},
 					{
-						"icon": null,
+						"icon": "",
 						"title": "Contact",
 						"url": "#"
 					}
@@ -30,12 +30,12 @@
 				"title": "account",
 				"items": [
 					{
-						"icon": null,
+						"icon": "",
 						"title": "Insights",
 						"url": "#"
 					},
 					{
-						"icon": null,
+						"icon": "",
 						"title": "Account",
 						"url": "#"
 					},

@@ -19,6 +19,7 @@ export const basicButton = () => (
     {text('Button text', 'Basic button', 'images')}
   </Button>
 );
+
 export const functionButton = () => (
   <Button
     icon={select(icon.label, icon.options, icon.default, icon.group)}
