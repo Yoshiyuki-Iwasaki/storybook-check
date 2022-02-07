@@ -11,6 +11,13 @@ export const StyledIntro = styled.section`
     margin: 0 auto;
     max-width: ${(props) => props.theme.gridMax};
   }
+  .intro__title {
+    margin: 0 auto 24px;
+    color: ${(props) => props.theme.grey900};
+    font-size: 36px;
+    letter-spacing: -0.05em;
+    line-height: 110%;
+  }
   .intro__subtitle {
     margin: 0 auto 32px;
     /* Secondary-500 */
@@ -23,16 +30,15 @@ export const StyledIntro = styled.section`
   .intro__text {
     margin: 0 auto 16px;
     max-width: 424px;
+    font-size: 13px;
     color: ${(props) => props.theme.grey600};
     font-weight: bold;
-    letter-spacing: -0.05em;
+    line-height: 1.4;
   }
-  .intro__title {
-    margin: 0 auto 24px;
-    color: ${(props) => props.theme.grey900};
-    font-size: 36px;
-    letter-spacing: -0.05em;
-    line-height: 110%;
+
+  .intro__cta {
+    font-size: 14px;
+    font-weight: 700;
   }
 `;
 

@@ -93,13 +93,28 @@ export const StyledRelated = styled.section`
   }
   .related-item__subtitle {
     margin-bottom: 12px;
-    color: ${(props) => props.theme.black};
-    font-size: 16px;
-    font-weight: 300;
+
+    a {
+      font-size: 16px;
+      color: ${(props) => props.theme.black};
+      font-weight: 300;
+    }
   }
   .related-item__title {
     margin-bottom: ${(props) => (props.variant !== 'products' ? `18px` : `0`)};
-    font-size: 24px;
+
+    a {
+      font-size: 24px;
+    }
+  }
+  .related-item__description {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .related-item__link {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 14px;
   }
 `;
 

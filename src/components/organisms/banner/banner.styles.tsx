@@ -4,16 +4,18 @@ export const StyledBanner = styled.section`
   background: #222;
 
   .banner__inner {
-    padding: 30px 0;
+    padding: 50px 0;
     text-align: center;
   }
 
   .banner__title {
+    margin: 0 0 30px;
     color: #fff;
   }
 
   .banner__text {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    font-size: 14px;
     color: #fff;
   }
 }`;

@@ -48,7 +48,9 @@ const RelatedItem = ({
       <a href={`/${slug}`}>{title}</a>
     </h3>
     <div className="related-item__description">{ParseHTML(description)}</div>
-    <a href="#">View article</a>
+    <a className="related-item__link" href="#">
+      View article
+    </a>
   </div>
 );
 
